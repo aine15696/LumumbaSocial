@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="homepage.css">
+    <script type="text/javaScript" src="Script.js"></script>
+
+    <title>Home | LumumbaSocial</title>
+</head>
+<body>
+    <nav>
+        <div class="section">
+            <h2 class="LumSoc">LumumbaSocial</h2>
+        <div class="signout">
+            <div class="profile-photo">
+                <img src="" id="profil1">
+            </div>
+            <input type="button" class="btn btn-primary" value="Sign Out" onclick="signout()">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="section">
+            <div class="left">
+                <div class="menu-list">
+                    <a class="menu-item" onclick="openOptions(1)">
+                        <span><i class="uil uil-edit"></i></span><h3>Edit personal Information.</h3>
+                    </a>
+                    <a class="menu-item" id="customize" onclick="openOptions(2)">
+                        <span><i class="uil uil-sliders-v"></i></span><h3>Customize</h3>
+                    </a>
+                </div>
+                <div class="others">
+                    <h4 style="text-align: center; padding: 0.5rem;">People you may Know.</h4>
+                    <div class="menu-list">
+                        <a class="menu-item">
+                            <div class="profile-photo">
+                                <img src="images\profile.jpg">
+                            </div>
+                            <div>
+                            <h3>Aine Daniel Mwejune</h3>
+                            <p class="muted" style="font-size: 0.7rem; margin-left: 0.4rem;">Also doing <span id="course1"></span></p>
+                            </div>
+                        </a>
+                        <a class="menu-item">
+                            <div class="profile-photo">
+                                <img src="images\images (3).jfif">
+                            </div>
+                            <div>
+                                <h3>Ampumuza Aijuka</h3>
+                                <p class="muted" style="font-size: 0.7rem; margin-left: 0.4rem;">Also doing <span id="course2"></span></p>
+                                </div>
+                        </a>
+                        <a class="menu-item">
+                            <div class="profile-photo">
+                                <img src="images\images (6).jfif">
+                            </div>
+                            <div>
+                                <h3>Kalibbala Johnson</h3>
+                                <p class="muted" style="font-size: 0.7rem; margin-left: 0.4rem;">Also studied at <span id="alevel1"></span></p>
+                                </div>
+                        </a>
+                        <a class="menu-item">
+                            <div class="profile-photo">
+                                <img src="images\images (4).jfif">
+                            </div>
+                            <div>
+                                <h3>Tusiimirwe Jemily</h3>
+                                <p class="muted" style="font-size: 0.7rem; margin-left: 0.4rem;"></p>
+                                </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="stories">
+                    <div class="story s1">
+                        <p class="name" style="margin-top: 5.5rem;">Your Warden</p>
+                    </div>
+                    <div class="story s2">
+                        <p class="name" style="margin-top: 5.5rem;">Your Custodian</p>
+                    </div>
+                    <div class="story s3">
+                        <p class="name" style="margin-top: 5.5rem;">Your Chairman</p>
+                    </div>
+                    <div class="story s4">
+                        <p class="name" style="margin-top: 4.7rem;">Your Interior Minister</p>
+                    </div>
+                </div>
+                <div class="history">
+                    <div class="text">
+                        <h2>
+                            On this day in History.
+                        </h2>
+                        <p class="muted">
+                            Lumumba opens its doors for the first time.
+                        </p>
+                    </div>
+                    <div class="picture">
+                        <img src="images\q.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+
+                <div class="profile">
+                    <div class="profile-photo1">
+                        <img src="" id="profil">
+                    </div>
+                    <div style="margin-left: 1rem;">
+                        <h3 id="snam"></h3>
+                        <p class="muted" id="personalStatmen" style="font-size: 1rem; margin-top:0.3rem;"></p>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="edu">
+                        <h4>Course</h4>
+                        <p class="muted" id= "cours" style="font-size: 1rem; margin-left: 0.2rem;"></p>
+                    </div>
+                    <div class="edu">
+                        <h4>Year </h4>
+                        <p class="muted" id= "yea" style="font-size: 1rem; margin-left: 0.2rem;"></p>
+                    </div>
+                    <div class="edu">
+                        <h4>A'level </h4>
+                        <p class="muted" id= "aleve" style="font-size: 1rem; margin-left: 0.2rem;"></p>
+                    </div>
+                    <div class="edu">
+                        <h4>O'level </h4>
+                        <p class="muted" id= "oleve" style="font-size: 1rem; margin-left: 0.2rem;"></p>
+                    </div>
+                    <div class="edu">
+                        <h4>Primary </h4>
+                        <p class="muted" id= "primar" style="font-size: 1rem; margin-left: 0.2rem;"></p>
+                    </div>
+                    
+                </div>
+                <div class="hobbies">
+                    <h3 style="margin: 1rem ;">HOBBIES</h3>
+                    <ul id="list"></ul>
+                    <div class="search-bar">
+                    <input type="text" id="newHobby" placeholder="Hobby" style="background-color: transparent; background: transparent; width: 100%; font-size: 00.9rem; color: var(--dark); text-align: center;"/>
+                    </div>
+                    <button onclick="addHobby()" class="btn btn-primary" style="margin: 1rem ;">Add Hobby</button>
+                </div>
+
+            </div>
+            <div class="customize" id="customize2" onclick="closeOptions(2)">
+                <div class="card">
+                    <h2>Customize your page apperance.</h2>
+                    <p class="muted">From font formating to background colors.</p>
+                    <div class="font-size">
+                        <h4>Font size</h4>
+                        <div>
+                            <h6>Aa</h6>
+                            <div class="choose-size" id="size">
+                                <span class="size-1" onclick="changeSize(1)"></span>
+                                <span class="size-2" onclick="changeSize(2)"></span>
+                                <span class="size-3" onclick="changeSize(3)"></span>
+                            </div>
+                            <h3>Aa</h3>
+                        </div>
+                    </div>
+                    <div class="font-color">
+                        <div class="color">
+                            <h4>Color</h4>
+                            <div class="choose-color">
+                                <span class="color-1" onclick="changeColor(1)"></span>
+                                <span class="color-2" onclick="changeColor(2)"></span>
+                                <span class="color-3" onclick="changeColor(3)"></span>
+                                <span class="color-4" onclick="changeColor(4)"></span>
+                                <span class="color-5" onclick="changeColor(5)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="background">
+                        <h4>Background</h4>
+                        <div class="choose-bg">
+                            <div class="bg-1" onclick="changebg(1)">
+                                <h5 for="bg-1">Light</h5>
+                            </div>
+                            <div class="bg-2" onclick="changebg(2)">
+                                <h5 for="bg-2">Mild</h5>
+                            </div>
+                            <div class="bg-3" onclick="changebg(3)">
+                                <h5 for="bg-3">Dark</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="customize" id="customize1" >
+                <div class="card">
+                    <h2>Edit your personal information</h2>
+                    <p class="muted"></p>
+                    <div class="login">
+                        <div style="text-align: -webkit-center;">
+                            <img id="profile" class="profile-photo1" src="images\icon.png">
+                            <input id="name" type="file" name="image" class="btn signin" onchange="imagepreview()" style="background-color: var(--danger); margin-bottom: 0;" accept="image/*" onchange="imageHandler()">
+                        </div>
+                        <input class="input stdno" id="sname" type="text" placeholder="Full Name">
+                        <input class="input" id="personalStatement" type="text"  placeholder="Personal Statment" style="margin: 0 1rem 1rem;">
+                        <div class="input stdno" style="display: inline-block;">
+                            <select name="cars" id="year" style="background-color: var(--light); color: var(--gray); text-align:center;">
+                                <option value="" disabled selected>Year of Study</option>
+                                <option value="Year 1">Year 1</option>
+                                <option value="Year 2">Year 2</option>
+                                <option value="Year 3">Year 3</option>
+                                <option value="Year 4">Year 4</option>
+                            </select> 
+                        </div> 
+                        <input class="input" id="stdno" type="text"  placeholder="Student Number" style="margin: 0 1rem 1rem; display: none;">
+                        <input class="input" id="course" type="text"  placeholder="Course" style="margin: 0 1rem; display: none;">             
+                        <input class="input" id="alevel" type="text"  placeholder="A'Level school" style="margin: 0 1rem;">
+                        <input class="input stdno" id="olevel" type="text" placeholder="O'Level School">
+                        <input class="input" id="primary" type="text"  placeholder="Primary" style="margin: 0 1rem;">
+                        <div style="display: flex; justify-content: center;">
+                            <input class="input" id="password" type="password"  placeholder="Password" style="margin: 1rem ;">
+                            <i class="uil uil-eye" onclick="seePassword()"></i>
+                        </div>
+                        <input class="btn btn-primary" type="button" value="Save" onclick="createAccount()" style="background-color: var(--danger);">
+                        <input class="btn btn-primary" type="button" value="Cancel" onclick="closeOptions(1)" style="background-color: var(--danger);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script> 
+        userData = JSON.parse(sessionStorage.getItem("currentUserDetails"))
+        snam = document.getElementById("snam")
+        statemen = document.getElementById("personalStatmen")
+        cours = document.getElementById("cours")
+        yea = document.getElementById("yea")
+        aleve = document.getElementById("aleve")
+        oleve = document.getElementById("oleve")
+        primar = document.getElementById("primar")
+        imag = document.getElementById("profil")
+        imag1 = document.getElementById("profil1")
+        course1 = document.getElementById("course1")
+        course2 = document.getElementById("course2")
+        alevel1 = document.getElementById("alevel1")
+
+        snam.innerHTML = userData.sname
+        statemen.innerHTML = userData.personalStatement
+        cours.innerHTML = userData.course
+        oleve.innerHTML = userData.olevel
+        aleve.innerHTML = userData.alevel
+        primar.innerHTML = userData.primary
+        imag.src = userData.img
+        imag1.src = userData.img
+        yea.innerHTML = userData.year
+        course1.innerHTML = userData.course
+        course2.innerText = userData.course
+        alevel1.innerText = userData.alevel
+
+        sname = document.getElementById("sname")
+        statement = document.getElementById("personalStatement")
+        course = document.getElementById("course")
+        stdno = document.getElementById("stdno")
+        year = document.getElementById("year")
+        alevel = document.getElementById("alevel")
+        olevel = document.getElementById("olevel")
+        primary = document.getElementById("primary")
+        image = document.getElementById("profile")
+        password = document.getElementById("password")
+
+        sname.value = userData.sname
+        statement.value = userData.personalStatement
+        course.value = userData.course
+        stdno.value = userData.stdno
+        olevel.value = userData.olevel
+        alevel.value = userData.alevel
+        primary.value = userData.primary
+        password.value = userData.password
+        image.src = userData.img
+        year.value = userData.year
+    </script>
+</body>
+</html>

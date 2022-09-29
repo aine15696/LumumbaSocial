@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javaScript" src="Script.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Register | LumumbaSocial</title>
+</head>
+<body>
+    <div class="body" style="top:0.5rem;">
+        <div class="container">
+            <div>
+                <h1 class="LumSoc">LumumbaSocial</h1>
+            </div>
+            <div class="login">
+                <div style="text-align: -webkit-center;">
+                    <img id="profile" class="profile-photo1" src="images\icon.png">
+                    <input id="name" type="file" name="image" class="btn signin" onchange="imagepreview()" style="background-color: var(--danger); margin-bottom: 0;" accept="image/*" onchange="imageHandler()">
+                </div>
+                <input class="input stdno" id="sname" type="text" placeholder="Full Name">
+                <input class="input" id="personalStatement" type="text"  placeholder="Personal Statment" style="margin: 0 1rem 1rem;">
+                <input class="input" id="stdno" type="text"  placeholder="Student Number" style="margin: 0 1rem 1rem;">
+                <input class="input" id="course" type="text"  placeholder="Course" style="margin: 0 1rem;">
+                <div class="input stdno">
+                    <select name="cars" id="year" style="background-color: var(--light); color: var(--gray); text-align:center;">
+                        <option value="" disabled selected>Year of Study</option>
+                        <option value="Year 1">Year 1</option>
+                        <option value="Year 2">Year 2</option>
+                        <option value="Year 3">Year 3</option>
+                        <option value="Year 4">Year 4</option>
+                    </select> 
+                </div>               
+                <input class="input" id="alevel" type="text"  placeholder="A'Level school" style="margin: 0 1rem;">
+                <input class="input stdno" id="olevel" type="text" placeholder="O'Level School">
+                <input class="input" id="primary" type="text"  placeholder="Primary" style="margin: 0 1rem;">
+                <div style="display: flex;">
+                    <input class="input" id="password" type="password"  placeholder="Password" style="margin: 1rem 1rem 0;">
+                    <i class="uil uil-eye" onclick="seePassword()"></i>
+                </div>
+                <input class="btn signin" type="button" value="Create Account" onclick="createAccount()" style="background-color: var(--danger);">
+                <a href="login.html" style="text-align: center; display:block;">Already have an account. Log In.</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

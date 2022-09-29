@@ -1,0 +1,102 @@
+:root{
+        --white: hsl(252, 30%, 100%);
+        --light: hsl(252, 30%, 95%);
+        --gray: hsl(252, 15%, 65%);
+        --primary: hsl(252, 75%, 60%);
+        --secondary: hsl(252, 100%, 90%);
+        --success: hsl(120, 50%, 55%);
+        --danger: hsl(0, 95%, 65%);
+        --dark: hsl(252, 30%, 17%);
+        --black: hsl(252, 30%, 10%);
+    
+        --border-radius: 2rem;
+        --btn: 0.6rem;
+        --input: 0.6rem 1rem;
+        --card: 1rem;
+    
+        --st-left: 5.4rem;
+        --st-right: -18rem;
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+body{
+    background: var(--light);
+    color: var(--dark);
+    cursor: default;
+}
+.body{
+    position: relative;
+    top: 20vh;
+    left: 10vw;
+}
+img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    opacity: 0.8;
+}
+.btn{
+    width: 100%;
+    background-color: var(--primary);
+    padding: var(--btn);
+    color: white;
+    border-radius: var(--border-radius);
+}
+.input{
+    width: 100%;
+    background-color: var(--light);
+    border-radius: var(--border-radius);
+    padding: var(--input);
+    text-align: center;
+}
+.input::placeholder{
+    color:var(--gray);
+}
+
+.LumSoc{
+    color: var(--danger);
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.425);
+}
+
+.container{
+    width: fit-content;
+    padding: 4rem;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: auto 20vw;
+    column-gap: 6rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    background: var(--white);
+    border-radius: var(--card);
+}
+.container.login-div{
+    color: var(--white);
+}
+.stdno{
+    margin: 1rem;
+}
+.password{
+    margin: 1rem;
+}
+.signin{
+    margin: 1rem;
+}
+.profile-photo1{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.uil-eye:before {
+    margin-top: 1.5rem;
+}
